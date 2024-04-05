@@ -1,0 +1,144 @@
+$coral: #38a8ca;
+$maroon: #8e2807;
+$title: #763b68;
+
+.cart-order {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  h1 {
+    align-self: center;
+  }
+
+  form {
+    width: 100%;
+
+    > * {
+      margin-top: 20px;
+    }
+
+    input {
+      width: 100%;
+      min-height: 25px;
+      border: 0;
+      font-size: 1rem;
+      letter-spacing: 0.15rem;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: $maroon;
+      border-radius: 4px;
+    }
+
+    label {
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: $maroon;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: $title;
+      letter-spacing: 1px;
+    }
+
+    h1:nth-of-type(2) {
+      margin-top: 10%;
+    }
+  }
+}
+
+.cart__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $coral;
+  -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+}
+
+.cart__container {
+  width: 65%;
+  padding: 5% 10%;
+}
+
+.name {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+
+  div {
+    width: 45%;
+  }
+}
+
+.btns {
+  display: flex;
+  align-items: flex-end;
+
+  button {
+    margin: 3px 0;
+    color: #cfc9e1;
+    background-color: #4a3b76;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 30px;
+    padding: 6px 10px;
+
+    &:hover {
+      animation-name: btn-hov;
+      animation-duration: 550ms;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes btn-hov {
+  100% {
+    background-color: #cfc9e1;
+    color: #4a3b76;
+    transform: scale(1.05);
+  }
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 736px) {
+  .cart__wrapper {
+    width: 100%;
+  }
+
+  .cart__container {
+    width: 100%;
+  }
+
+  form h1 {
+    text-align: center;
+  }
+
+  .name {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+
+    div {
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+    }
+  }
+
+  .street {
+    text-align: center;
+  }
+}
+
+.error-order {
+  margin-top: 5px;
+  color: red;
+}

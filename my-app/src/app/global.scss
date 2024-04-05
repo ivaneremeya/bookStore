@@ -1,0 +1,77 @@
+@import "./normalize.scss";
+
+body {
+  max-width: 1920px;
+  margin: 0;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.btn {
+  all: unset;
+  color: white;
+  padding: 15px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #4985ff;
+  border-radius: 22px;
+}
+.list--reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section {
+  margin-bottom: 100px;
+
+  &--title {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    padding: 10px 0;
+  }
+
+  &--descr {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  position: relative;
+  padding: 0 40px 40px 40px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}

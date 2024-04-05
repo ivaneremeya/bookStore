@@ -1,0 +1,48 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background-color: #26a9e0;
+  padding: 25px 32px;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+@media screen and (max-width: 856px) {
+  .header__nav {
+    display: none;
+  }
+}
+.button__header {
+  all: unset;
+  color: aliceblue;
+}
+.button__header:hover {
+  color: rgb(217, 210, 210);
+  border-bottom: 2px solid rgb(217, 210, 210);
+}
+
+.langvich__wrapper {
+  align-items: center;
+  display: flex;
+  column-gap: 10px;
+}
+
+.langvich__button {
+  all: unset;
+  background-color: #9c27b0;
+  box-shadow:
+    0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 30px;
+  padding: 5px 13px;
+  color: #fff;
+}
