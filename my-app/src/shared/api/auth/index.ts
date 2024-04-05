@@ -28,7 +28,7 @@ export interface User {
   last_login?: string;
 }
 export const AxiosInstance = axios.create({
-  baseURL: "/",
+  baseURL: "https://bookstore-api.wis-software.ru/",
   withCredentials: true,
 });
 export const AvailableEmail = async (email: string): Promise<boolean> =>
