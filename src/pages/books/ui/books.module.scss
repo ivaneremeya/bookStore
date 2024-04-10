@@ -1,0 +1,37 @@
+.books__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 20px;
+  //   overflow: auto;
+}
+
+.books__container {
+  display: flex;
+  column-gap: 37px;
+}
+
+.books__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.books__autor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .books__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+  }
+}
+@media screen and (max-width: 489px) {
+  .books__container {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
